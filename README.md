@@ -2,6 +2,6 @@
 
 local test
 
-```
+```bash
 npx http-server -o
 ```
