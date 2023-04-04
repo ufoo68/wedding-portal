@@ -1,158 +1,232 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1.0, user-scalable=no">
-<title>ポータルサイト</title>
-<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8">
+  <link rel="icon" href="/images/favicon.ico">
+  <title>MATSUNAGA☆Wedding Potal♪</title>
+  <meta name="description" content="松永・吉川家の結婚式に参加してきました！新郎はイケメンで新婦は高畑充希似の美女でした(*^^*)">
+  <link rel="canonical" href="https://wedding-portal-psi.vercel.app">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+  <meta property="og:title" content="MATSUNAGA☆Wedding Potal♪">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wedding-portal-psi.vercel.app">
+  <meta property="og:image" content="https://wedding-portal-psi.vercel.app/images/ogp.png">
+  <meta property="og:site_name" content="MATSUNAGA☆Wedding Potal♪">
+  <meta property="og:description" content="松永・吉川家の結婚式に参加してきました！新郎はイケメンで新婦は高畑充希似の美女でした(*^^*)">
+  <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
 </head>
 
 <body>
 <main>
+<!--
   <header id="header">
+    <div>
+      <span></span>
+    </div>
     <ul>
-      <li><a href="">会場情報</a></li>
-      <li><a href="">プロフィール</a></li>
-      <li><a href="">料理/ドリンクメニュー</a></li>
-      <li><a href="">投票結果発表</a></li>
-      <li><a href="">クイズに参加</a></li>
-      <li><a href="">二次会</a></li>
-      <li><span>写真ダウンロード</span><small>Coming Soon</small></li>
+      <li><a href="#prf">プロフィール</a></li>
+      <li><a href="#tl">本日の進行</a></li>
+      <li><a href="#pe_01">誓いの言葉投票</a></li>
+      <li><a href="#pe_02">クイズに参加</a></li>
+      <li><a href="#pe_03">以心伝心ゲーム</a></li>
+      <li><a href="#dl">写真ダウンロード</a></li>
     </ul>
   </header>
-  <section class="mv">
-    <div class="section">
-      <figure><img src="images/logo.png" alt="ロゴ"></figure>
-      <h1 class="title">
-        <strong>2023年04月08日(土)</strong>
-        <strong>11:00～15:30</strong>
-        <span>マナーハウス写風舘</span>
-      </h1>
+-->
+  
+  <section id="mv">
+    <picture class="mv_img">
+      <source srcset="/images/mv_img.webp" type="image/webp">
+      <img class="image" src="/images/mv_img.png" loading="eager">
+    </picture>
+    <picture class="mv_back">
+      <source srcset="/images/mv_back.webp" type="image/webp">
+      <img class="image" src="/images/mv_back.png" loading="eager">
+    </picture>
+    <picture class="mv_sakura">
+      <source srcset="/images/mv_sakura.webp" type="image/webp">
+      <img class="image" src="/images/mv_sakura.png" loading="eager">
+    </picture>
+    <picture class="mv_title">
+      <source srcset="/images/mv_title.webp" type="image/webp">
+      <img class="image" src="/images/mv_title.png" loading="eager">
+    </picture>
+  </section>
+  
+  <section id="prf">
+    <picture class="prf_title title_h">
+      <source srcset="/images/prf_title.webp" type="image/webp" width="486" height="92">
+      <img class="image" src="/images/prf_title.png" width="486" height="92" loading="eager">
+    </picture>
+    <picture class="prf_img">
+      <source srcset="/images/prf_img.webp" type="image/webp">
+      <img class="image" src="/images/prf_img.png" loading="eager">
+    </picture>
+    <div class="prf_btn btn_h mordal">
+      <picture>
+        <source srcset="/images/prf_btn.webp" type="image/webp">
+        <img class="image" src="/images/prf_btn.png" loading="eager">
+      </picture>
     </div>
   </section>
   
-  <div class="top_menu">
-    <ul class="section">
-      <li><a href="">会場情報</a></li>
-      <li><a href="">プロフィール</a></li>
-      <li><a href="">料理/ドリンクメニュー</a></li>
-      <li><a href="">投票結果発表</a></li>
-      <li><a href="">クイズに参加</a></li>
-      <li><a href="">二次会</a></li>
-      <li><span>写真ダウンロード</span><small>Coming Soon</small></li>
-    </ul>
-  </div>
-  
-  <section id="anc_01" class="access">
-    <div class="section">
-      <h2 class="title">会場情報</h2>
-      <div class="block">
-        <strong>マナーハウス写風舘</strong>
-        <p>
-          〒524-0101<br>
-          滋賀県守山市今浜町２５７４−４
-          077-584-3322
-        </p>
+  <section id="tl">
+    <picture class="tl_top inview fadeIn_up">
+      <source srcset="/images/tl_top.webp" type="image/webp">
+      <img class="image" src="/images/tl_top.png" loading="lazy">
+    </picture>
+    <picture class="tl_title title_h">
+      <source srcset="/images/tl_title.webp" type="image/webp">
+      <img class="image" src="/images/tl_title.png" loading="lazy">
+    </picture>
+    <div class="content">
+      <div class="tl_scroll">
+        <div class="tl_list">
+          <div>
+            <time>11:00</time>
+            <span>受付開始</span>
+            <p>
+              ウェルカムスペースにも<br>新郎新婦のこだわりが<br>詰まっています。<br>まだご覧になっていない<br>方は是非！
+            </p>
+          </div>
+          <div>
+            <time>12:00</time>
+            <span>ガーデン人前式</span>
+            <p>
+              人前式とはふたりの結婚の誓いを神仏にする代わりに、家族や友人などのゲストに証人となってもらう挙式スタイルです。
+            </p>
+          </div>
+          <div>
+            <time>13:00</time>
+            <span>披露宴開宴</span>
+            <p>
+              BGMは新婦の好きな<br>ゲームやアニメから♪
+            </p>
+          </div>
+          <div>
+            <time>15:30</time>
+            <span>お見送り</span>
+            <p>
+              ひとりひとりとご挨拶<br>させていただきます♡
+            </p>
+          </div>
+          <div>
+            <time>16:00</time>
+            <span>二次会開宴</span>
+            <p>
+              同式場内で行います
+            </p>
+          </div>
+          <div>
+            <time>18:00</time>
+            <span>お見送り</span>
+            <p>
+              本日は最後までお付き合い<br>
+              ありがとうございました！<br>
+              お気をつけてお帰り下さい
+            </p>
+          </div>
+        </div>
       </div>
-      <div>gmap</div>
+    </div>
+    <picture class="tl_bg inview fadeIn_up">
+      <source srcset="/images/tl_bg.webp" type="image/webp">
+      <img class="image" src="/images/tl_bg.png" loading="lazy">
+    </picture>
+    <picture class="tl_bottom inview fadeIn_up">
+      <source srcset="/images/tl_bottom.webp" type="image/webp">
+      <img class="image" src="/images/tl_bottom.png" loading="lazy">
+    </picture>
+  </section>
+  
+  <section id="pe">
+    <picture class="pe_title title_h">
+      <source srcset="/images/pe_title.webp" type="image/webp">
+      <img class="image" src="/images/pe_title.png" loading="lazy">
+    </picture>
+    <div id="pe_01">
+      <picture class="img">
+        <source srcset="/images/pe_01_img.webp" type="image/webp">
+        <img class="image" src="/images/pe_01_img.png" loading="lazy">
+      </picture>
+      <div class="btn btn_h">
+        <a href="https://kazoebako.vercel.app/result" target="_blank">
+          <picture>
+            <source srcset="/images/pe_01_btn.webp" type="image/webp">
+            <img class="image" src="/images/pe_01_btn.png" loading="lazy">
+          </picture>
+        </a>
+      </div>
+      <picture class="bg">
+        <source srcset="/images/pe_01_bg.webp" type="image/webp">
+        <img class="image" src="/images/pe_01_bg.png" loading="lazy">
+      </picture>
+    </div>
+    <div id="pe_02">
+      <picture class="img">
+        <source srcset="/images/pe_02_img.webp" type="image/webp">
+        <img class="image" src="/images/pe_02_img.png" loading="lazy">
+      </picture>
+      <div class="btn btn_h">
+        <a href="https://orenoquiz.vercel.app/quiz/participant/fa926d35-38eb-47d2-9e70-782f333acfda" target="_blank">
+          <picture>
+            <source srcset="/images/pe_02_btn.webp" type="image/webp">
+            <img class="image" src="/images/pe_02_btn.png" loading="lazy">
+          </picture>
+        </a>
+      </div>
+      <picture class="bg">
+        <source srcset="/images/pe_02_bg.webp" type="image/webp">
+        <img class="image" src="/images/pe_02_bg.png" loading="lazy">
+      </picture>
+    </div>
+    <div id="pe_03">
+      <picture class="img">
+        <source srcset="/images/pe_03_img.webp" type="image/webp">
+        <img class="image" src="/images/pe_03_img.png" loading="lazy">
+      </picture>
+      <picture class="bg">
+        <source srcset="/images/pe_03_bg.webp" type="image/webp">
+        <img class="image" src="/images/pe_03_bg.png" loading="lazy">
+      </picture>
     </div>
   </section>
 
-  <section id="anc_02" class="profile">
-    <div class="section">
-      <h2 class="title">プロフィール</h2>
-      <p>
-        念のためおさらいしたい方へ
-      </p>
-      <div class="btn"><a href="">MORE</a></div>
-    </div>
-  </section>
 
-  <section id="anc_02" class="course">
-    <div class="section">
-      <h2 class="title">料理/ドリンクメニュー</h2>
-      <section class="block">
-        <h3 class="sub_title">料理</h3>
-        <ul>
-          <li>テキストのソテー</li>
-          <li>ダミーのポタージュ</li>
-          <li>なんかのさなぎ</li>
-          <li>あああの適当和え</li>
-        </ul>
-      </section>
-      <section class="block">
-        <h3 class="sub_title">ドリンク</h3>
-        <ul>
-          <li>オレンジジュース</li>
-          <li>オレンジジュース</li>
-          <li>オレンジジュース</li>
-          <li>オレンジジュース</li>
-        </ul>
-        <p class="indent"><i>※</i>太字はアルコール</p>
-      </section>
-    </div>
-  </section>
-  
-  <section class="event">
-    <h2 class="title">イベント情報</h2>
-    <div class="event_content section">
-      <section id="anc_03" class="block">
-        <div>
-          <h3 class="sub_title">誓いの言葉選手権<span>投票結果発表</span></h3>
-          <p>
-            挙式前に投票いただいた<br>
-            「誓いの言葉」の投票結果発表です<br>
-            新郎お手製のリアルタイム集計システムをご堪能下さい
-          </p>
-          <div class="btn"><a href="">結果を見る</a></div>
-        </div>
-      </section>
-      
-      <section id="anc_04" class="block">
-        <div>
-          <h3 class="sub_title">新郎からの挑戦状</h3>
-          <p>
-            新郎から二人に関するクイズを出題！<br>
-            正解者には豪華景品が！？
-          </p>
-          <div class="btn"><a href="">クイズに参加</a></div>
-        </div>
-      </section>
-      
-      <section id="anc_05" class="block">
-        <div>
-          <h3 class="sub_title">二次会</h3>
-          <p>
-            豪華賞品をかけたスマブラ大会を開催！<br>
-            ”戦いの数だけドラマがある”
-            敗者復活もあるので安心してください！
-          </p>
-          <p>
-            16：00～19:00
-          </p>
-        </div>
-      </section>
-    </div>
-  </section>
-  
-  <section id="anc_06" class="photo">
-    <div class="section">
-      <h2 class="title">写真ダウンロード</h2>
-      <p>
-        後日　本日のお写真をアップいたします！<br>
-        アップ通知のほしい方は<br>
-        下記フォームにメールアドレスを登録してください
+  <section id="dl">
+    <div class="content">
+      <picture class="title title_h">
+        <source srcset="/images/dl_title.webp" type="image/webp">
+        <img class="image" src="/images/dl_title.png" loading="lazy">
+      </picture>
+      <p class="text">
+        後日 本日のお写真をアップいたします！<br>
+        アップ通知のほしい方は下記フォームに<br>
+        メールアドレスを登録してください
       </p>
-      <p class="indent"><i>※</i>こちらのフォームから取得したメールアドレスは写真の更新通知にのみ使用します。</p>
-      <form>
-        <input type="email" placeholder="noruchan@kawaii.jp">
-        <button>登録</button>
-      </form>
+      <p class="parts_indent"><i>※</i>メールアドレスは写真の更新通知にのみ使用します</p>
+      <div class="dl_form">
+        <form>
+          <input type="email">
+          <button>
+            <picture class="btn_h">
+              <source srcset="/images/dl_btn.webp" type="image/webp">
+              <img class="image" src="/images/dl_btn.png" loading="lazy">
+            </picture>
+          </button>
+        </form>
+      </div>
     </div>
   </section>
   
+  <div class="cp">
+    <p>2023.04.08</p>
+  </div>
 </main>
 
 
