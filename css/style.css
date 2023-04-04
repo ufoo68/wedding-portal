@@ -235,9 +235,6 @@ picture {
   position: relative;
   margin-bottom: 8vw;
 }
-#pe #pe_02 .bg {
-  margin-right: 0.9vw;
-}
 #pe #pe_02 .img {
   left: auto;
   right: 0;
@@ -250,13 +247,13 @@ picture {
   top: 0;
 }
 #dl {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 15% 0;
   margin-bottom: 16vw;
   background: url(../images/dl_bg.jpg) no-repeat center center / cover;
-  background-attachment: fixed;
 }
 #dl .content {
   width: 85%;
