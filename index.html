@@ -21,6 +21,13 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/animation.css" />
   <script defer src="./scripts/animation.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("user_JRBD6pHuj145k89ijFiQd");
+    })();
+  </script>
+  <script defer src="./scripts/email.js"></script>
 </head>
 
 <body>
@@ -214,8 +221,8 @@
       <p class="parts_indent"><i>※</i>メールアドレスは写真の更新通知にのみ使用します</p>
       <div class="dl_form">
         <form>
-          <input type="email">
-          <button>
+          <input id="email-form-input" type="email">
+          <button id="email-form-send-button" type="button">
             <picture class="btn_h">
               <source srcset="/images/dl_btn.webp" type="image/webp">
               <img class="image" src="/images/dl_btn.png" loading="lazy">
