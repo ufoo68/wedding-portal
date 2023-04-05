@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
-  <meta charset="UTF-8">
-  <link rel="icon" href="/images/favicon.ico">
-  <title>MATSUNAGA☆Wedding Potal♪</title>
-  <meta name="description" content="松永・吉川家の結婚式に参加してきました！新郎はイケメンで新婦は高畑充希似の美女でした(*^^*)">
-  <link rel="canonical" href="https://wedding-portal-psi.vercel.app">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@" />
-  <meta name="twitter:creator" content="@" />
-  <meta property="og:title" content="MATSUNAGA☆Wedding Potal♪">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://wedding-portal-psi.vercel.app">
-  <meta property="og:image" content="https://wedding-portal-psi.vercel.app/images/ogp.png">
-  <meta property="og:site_name" content="MATSUNAGA☆Wedding Potal♪">
-  <meta property="og:description" content="松永・吉川家の結婚式に参加してきました！新郎はイケメンで新婦は高畑充希似の美女でした(*^^*)">
-  <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="css/animation.css" />
-  <script defer src="./scripts/animation.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function(){
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/images/favicon.ico" />
+    <title>MATSUNAGA☆Wedding Potal♪</title>
+    <meta
+      name="description"
+      content="松永・吉川家の結婚式に参加してきました！新郎はイケメンで新婦は高畑充希似の美女でした(*^^*)"
+    />
+    <link rel="canonical" href="https://wedding-portal-psi.vercel.app" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:title" content="MATSUNAGA☆Wedding Potal♪" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wedding-portal-psi.vercel.app" />
+    <meta
+      property="og:image"
+      content="https://wedding-portal-psi.vercel.app/images/ogp.png"
+    />
+    <meta property="og:site_name" content="MATSUNAGA☆Wedding Potal♪" />
+    <meta
+      property="og:description"
+      content="松永・吉川家の結婚式に参加してきました！新郎はイケメンで新婦は高畑充希似の美女でした(*^^*)"
+    />
+    <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="css/animation.css"
+    />
+    <script defer src="./scripts/animation.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
         emailjs.init("user_JRBD6pHuj145k89ijFiQd");
-    })();
-  </script>
-  <script defer src="./scripts/email.js"></script>
-</head>
+      })();
+    </script>
+    <script>
+      window.onload = () => {
+        scroll({ top: 0, behavior: "smooth" });
+      };
+    </script>
+    <script defer src="./scripts/email.js"></script>
+  </head>
 
-<body>
-<main>
-<!--
+  <body>
+    <main>
+      <!--
   <header id="header">
     <div>
       <span></span>
@@ -47,215 +72,225 @@
     </ul>
   </header>
 -->
-  
-  <section id="mv">
-    <!-- 1,フェード表示-->
-    <picture id="mv_img" class="mv_img scroll-fade-in">
-      <source srcset="/images/mv_img.webp" type="image/webp">
-      <img class="image" src="/images/mv_img.png" loading="eager">
-    </picture>
-    <!-- 2,フェード表示-->
-    <picture id="mv_back" class="mv_back scroll-fade-in">
-      <source srcset="/images/mv_back.webp" type="image/webp">
-      <img class="image" src="/images/mv_back.png" loading="eager">
-    </picture>
-    <!-- 3,フェード表示-->
-    <picture id="mv_sakura" class="mv_sakura scroll-fade-in">
-      <source srcset="/images/mv_sakura.webp" type="image/webp">
-      <img class="image" src="/images/mv_sakura.png" loading="eager">
-    </picture>
-    <!-- 4,フェード表示-->
-    <picture id="mv_title" class="mv_title scroll-fade-in">
-      <source srcset="/images/mv_title.webp" type="image/webp">
-      <img class="image" src="/images/mv_title.png" loading="eager">
-    </picture>
-  </section>
-  
-  <!-- ブロックごとスクロールでフェード表示-->
-  <section id="prf" class="scroll-fade-in">
-    <picture class="prf_title title_h">
-      <source srcset="/images/prf_title.webp" type="image/webp" width="486" height="92">
-      <img class="image" src="/images/prf_title.png" width="486" height="92" loading="eager">
-    </picture>
-    <picture class="prf_img">
-      <source srcset="/images/prf_img.webp" type="image/webp">
-      <img class="image" src="/images/prf_img.png" loading="eager">
-    </picture>
-    <div class="prf_btn btn_h mordal">
-      <picture>
-        <source srcset="/images/prf_btn.webp" type="image/webp">
-        <img class="image" src="/images/prf_btn.png" loading="eager">
-      </picture>
-    </div>
-  </section>
-  
-  <!-- モーダル中身 -->
-  <div id="prf-modal" class="">
-    <dl>
-      <dt></dt>
-      <dd></dd>
-    </dl>
-  </div>
-  
-  <section id="tl">
-    <!-- 1,スクロールでフェード表示-->
-    <picture id="tl_top" class="tl_top inview fadeIn_up scroll-fade-in">
-      <source srcset="/images/tl_top.webp" type="image/webp">
-      <img class="image" src="/images/tl_top.png" loading="lazy">
-    </picture>
-    <!-- 3,スクロールでフェード表示-->
-    <picture id="tl_title" class="tl_title title_h scroll-fade-in">
-      <source srcset="/images/tl_title.webp" type="image/webp">
-      <img class="image" src="/images/tl_title.png" loading="lazy">
-    </picture>
-    <!-- 4,スクロールでフェード表示-->
-    <div id="tl_content" class="content scroll-fade-in">
-      <div class="tl_scroll">
-        <div class="tl_list">
-          <div>
-            <time>11:00</time>
-            <span>受付開始</span>
-            <p>
-              ウェルカムスペースにも<br>新郎新婦のこだわりが<br>詰まっています。<br>まだご覧になっていない<br>方は是非！
-            </p>
-          </div>
-          <div>
-            <time>12:00</time>
-            <span>ガーデン人前式</span>
-            <p>
-              人前式とはふたりの結婚の誓いを神仏にする代わりに、家族や友人などのゲストに証人となってもらう挙式スタイルです。
-            </p>
-          </div>
-          <div>
-            <time>13:00</time>
-            <span>披露宴開宴</span>
-            <p>
-              BGMは新婦の好きな<br>ゲームやアニメから♪
-            </p>
-          </div>
-          <div>
-            <time>15:30</time>
-            <span>お見送り</span>
-            <p>
-              ひとりひとりとご挨拶<br>させていただきます♡
-            </p>
-          </div>
-          <div>
-            <time>16:00</time>
-            <span>二次会開宴</span>
-            <p>
-              同式場内で行います
-            </p>
-          </div>
-          <div>
-            <time>18:00</time>
-            <span>お見送り</span>
-            <p>
-              本日は最後までお付き合い<br>
-              ありがとうございました！<br>
-              お気をつけてお帰り下さい
-            </p>
+
+      <section id="mv">
+        <!-- 1,フェード表示-->
+        <picture id="mv_img" class="mv_img scroll-fade-in">
+          <source srcset="/images/mv_img.webp" type="image/webp" />
+          <img class="image" src="/images/mv_img.png" loading="eager" />
+        </picture>
+        <!-- 2,フェード表示-->
+        <picture id="mv_back" class="mv_back scroll-fade-in">
+          <source srcset="/images/mv_back.webp" type="image/webp" />
+          <img class="image" src="/images/mv_back.png" loading="eager" />
+        </picture>
+        <!-- 3,フェード表示-->
+        <picture id="mv_sakura" class="mv_sakura scroll-fade-in">
+          <source srcset="/images/mv_sakura.webp" type="image/webp" />
+          <img class="image" src="/images/mv_sakura.png" loading="eager" />
+        </picture>
+        <!-- 4,フェード表示-->
+        <picture id="mv_title" class="mv_title scroll-fade-in">
+          <source srcset="/images/mv_title.webp" type="image/webp" />
+          <img class="image" src="/images/mv_title.png" loading="eager" />
+        </picture>
+      </section>
+
+      <!-- ブロックごとスクロールでフェード表示-->
+      <section id="prf" class="scroll-fade-in">
+        <picture class="prf_title title_h">
+          <source
+            srcset="/images/prf_title.webp"
+            type="image/webp"
+            width="486"
+            height="92"
+          />
+          <img
+            class="image"
+            src="/images/prf_title.png"
+            width="486"
+            height="92"
+            loading="eager"
+          />
+        </picture>
+        <picture class="prf_img">
+          <source srcset="/images/prf_img.webp" type="image/webp" />
+          <img class="image" src="/images/prf_img.png" loading="eager" />
+        </picture>
+        <div class="prf_btn btn_h mordal">
+          <picture>
+            <source srcset="/images/prf_btn.webp" type="image/webp" />
+            <img class="image" src="/images/prf_btn.png" loading="eager" />
+          </picture>
+        </div>
+      </section>
+
+      <!-- モーダル中身 -->
+      <div id="prf-modal" class="">
+        <dl>
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </div>
+
+      <section id="tl">
+        <!-- 1,スクロールでフェード表示-->
+        <picture id="tl_top" class="tl_top inview fadeIn_up scroll-fade-in">
+          <source srcset="/images/tl_top.webp" type="image/webp" />
+          <img class="image" src="/images/tl_top.png" loading="lazy" />
+        </picture>
+        <!-- 3,スクロールでフェード表示-->
+        <picture id="tl_title" class="tl_title title_h scroll-fade-in">
+          <source srcset="/images/tl_title.webp" type="image/webp" />
+          <img class="image" src="/images/tl_title.png" loading="lazy" />
+        </picture>
+        <!-- 4,スクロールでフェード表示-->
+        <div id="tl_content" class="content scroll-fade-in">
+          <div class="tl_scroll">
+            <div class="tl_list">
+              <div>
+                <time>11:00</time>
+                <span>受付開始</span>
+                <p>
+                  ウェルカムスペースにも<br />新郎新婦のこだわりが<br />詰まっています。<br />まだご覧になっていない<br />方は是非！
+                </p>
+              </div>
+              <div>
+                <time>12:00</time>
+                <span>ガーデン人前式</span>
+                <p>
+                  人前式とはふたりの結婚の誓いを神仏にする代わりに、家族や友人などのゲストに証人となってもらう挙式スタイルです。
+                </p>
+              </div>
+              <div>
+                <time>13:00</time>
+                <span>披露宴開宴</span>
+                <p>BGMは新婦の好きな<br />ゲームやアニメから♪</p>
+              </div>
+              <div>
+                <time>15:30</time>
+                <span>お見送り</span>
+                <p>ひとりひとりとご挨拶<br />させていただきます♡</p>
+              </div>
+              <div>
+                <time>16:00</time>
+                <span>二次会開宴</span>
+                <p>同式場内で行います</p>
+              </div>
+              <div>
+                <time>18:00</time>
+                <span>お見送り</span>
+                <p>
+                  本日は最後までお付き合い<br />
+                  ありがとうございました！<br />
+                  お気をつけてお帰り下さい
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- 2,スクロールでフェード表示-->
-    <picture id="tl_bg" class="tl_bg inview fadeIn_up scroll-fade-in">
-      <source srcset="/images/tl_bg.webp" type="image/webp">
-      <img class="image" src="/images/tl_bg.png" loading="lazy">
-    </picture>
-    <!-- 5,スクロールでフェード表示-->
-    <picture id="tl_bottom" class="tl_bottom inview fadeIn_up scroll-fade-in">
-      <source srcset="/images/tl_bottom.webp" type="image/webp">
-      <img class="image" src="/images/tl_bottom.png" loading="lazy">
-    </picture>
-  </section>
-  
-  <section id="pe">
-    <picture class="pe_title title_h">
-      <source srcset="/images/pe_title.webp" type="image/webp">
-      <img class="image" src="/images/pe_title.png" loading="lazy">
-    </picture>
-    <div id="pe_01">
-      <picture class="img">
-        <source srcset="/images/pe_01_img.webp" type="image/webp">
-        <img class="image" src="/images/pe_01_img.png" loading="lazy">
-      </picture>
-      <div class="btn btn_h">
-        <a href="https://kazoebako.vercel.app/result" target="_blank">
-          <picture>
-            <source srcset="/images/pe_01_btn.webp" type="image/webp">
-            <img class="image" src="/images/pe_01_btn.png" loading="lazy">
+        <!-- 2,スクロールでフェード表示-->
+        <picture id="tl_bg" class="tl_bg inview fadeIn_up scroll-fade-in">
+          <source srcset="/images/tl_bg.webp" type="image/webp" />
+          <img class="image" src="/images/tl_bg.png" loading="lazy" />
+        </picture>
+        <!-- 5,スクロールでフェード表示-->
+        <picture
+          id="tl_bottom"
+          class="tl_bottom inview fadeIn_up scroll-fade-in"
+        >
+          <source srcset="/images/tl_bottom.webp" type="image/webp" />
+          <img class="image" src="/images/tl_bottom.png" loading="lazy" />
+        </picture>
+      </section>
+
+      <section id="pe">
+        <picture class="pe_title title_h">
+          <source srcset="/images/pe_title.webp" type="image/webp" />
+          <img class="image" src="/images/pe_title.png" loading="lazy" />
+        </picture>
+        <div id="pe_01">
+          <picture class="img">
+            <source srcset="/images/pe_01_img.webp" type="image/webp" />
+            <img class="image" src="/images/pe_01_img.png" loading="lazy" />
           </picture>
-        </a>
-      </div>
-      <picture class="bg">
-        <source srcset="/images/pe_01_bg.webp" type="image/webp">
-        <img class="image" src="/images/pe_01_bg.png" loading="lazy">
-      </picture>
-    </div>
-    <div id="pe_02">
-      <picture class="img">
-        <source srcset="/images/pe_02_img.webp" type="image/webp">
-        <img class="image" src="/images/pe_02_img.png" loading="lazy">
-      </picture>
-      <div class="btn btn_h">
-        <a href="https://orenoquiz.vercel.app/quiz/participant/fa926d35-38eb-47d2-9e70-782f333acfda" target="_blank">
-          <picture>
-            <source srcset="/images/pe_02_btn.webp" type="image/webp">
-            <img class="image" src="/images/pe_02_btn.png" loading="lazy">
+          <div class="btn btn_h">
+            <a href="https://kazoebako.vercel.app/result" target="_blank">
+              <picture>
+                <source srcset="/images/pe_01_btn.webp" type="image/webp" />
+                <img class="image" src="/images/pe_01_btn.png" loading="lazy" />
+              </picture>
+            </a>
+          </div>
+          <picture class="bg">
+            <source srcset="/images/pe_01_bg.webp" type="image/webp" />
+            <img class="image" src="/images/pe_01_bg.png" loading="lazy" />
           </picture>
-        </a>
+        </div>
+        <div id="pe_02">
+          <picture class="img">
+            <source srcset="/images/pe_02_img.webp" type="image/webp" />
+            <img class="image" src="/images/pe_02_img.png" loading="lazy" />
+          </picture>
+          <div class="btn btn_h">
+            <a
+              href="https://orenoquiz.vercel.app/quiz/participant/fa926d35-38eb-47d2-9e70-782f333acfda"
+              target="_blank"
+            >
+              <picture>
+                <source srcset="/images/pe_02_btn.webp" type="image/webp" />
+                <img class="image" src="/images/pe_02_btn.png" loading="lazy" />
+              </picture>
+            </a>
+          </div>
+          <picture class="bg">
+            <source srcset="/images/pe_02_bg.webp" type="image/webp" />
+            <img class="image" src="/images/pe_02_bg.png" loading="lazy" />
+          </picture>
+        </div>
+        <div id="pe_03">
+          <picture class="img">
+            <source srcset="/images/pe_03_img.webp" type="image/webp" />
+            <img class="image" src="/images/pe_03_img.png" loading="lazy" />
+          </picture>
+          <picture class="bg">
+            <source srcset="/images/pe_03_bg.webp" type="image/webp" />
+            <img class="image" src="/images/pe_03_bg.png" loading="lazy" />
+          </picture>
+        </div>
+      </section>
+
+      <section id="dl">
+        <div class="content">
+          <picture class="title title_h">
+            <source srcset="/images/dl_title.webp" type="image/webp" />
+            <img class="image" src="/images/dl_title.png" loading="lazy" />
+          </picture>
+          <p class="text">
+            後日 本日のお写真をアップいたします！<br />
+            アップ通知のほしい方は下記フォームに<br />
+            メールアドレスを登録してください
+          </p>
+          <p class="parts_indent">
+            <i>※</i>メールアドレスは写真の更新通知にのみ使用します
+          </p>
+          <div class="dl_form">
+            <form>
+              <input id="email-form-input" type="email" />
+              <button id="email-form-send-button" type="button">
+                <picture class="btn_h">
+                  <source srcset="/images/dl_btn.webp" type="image/webp" />
+                  <img class="image" src="/images/dl_btn.png" loading="lazy" />
+                </picture>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="cp">
+        <p>2023.04.08</p>
       </div>
-      <picture class="bg">
-        <source srcset="/images/pe_02_bg.webp" type="image/webp">
-        <img class="image" src="/images/pe_02_bg.png" loading="lazy">
-      </picture>
-    </div>
-    <div id="pe_03">
-      <picture class="img">
-        <source srcset="/images/pe_03_img.webp" type="image/webp">
-        <img class="image" src="/images/pe_03_img.png" loading="lazy">
-      </picture>
-      <picture class="bg">
-        <source srcset="/images/pe_03_bg.webp" type="image/webp">
-        <img class="image" src="/images/pe_03_bg.png" loading="lazy">
-      </picture>
-    </div>
-  </section>
-
-
-  <section id="dl">
-    <div class="content">
-      <picture class="title title_h">
-        <source srcset="/images/dl_title.webp" type="image/webp">
-        <img class="image" src="/images/dl_title.png" loading="lazy">
-      </picture>
-      <p class="text">
-        後日 本日のお写真をアップいたします！<br>
-        アップ通知のほしい方は下記フォームに<br>
-        メールアドレスを登録してください
-      </p>
-      <p class="parts_indent"><i>※</i>メールアドレスは写真の更新通知にのみ使用します</p>
-      <div class="dl_form">
-        <form>
-          <input id="email-form-input" type="email">
-          <button id="email-form-send-button" type="button">
-            <picture class="btn_h">
-              <source srcset="/images/dl_btn.webp" type="image/webp">
-              <img class="image" src="/images/dl_btn.png" loading="lazy">
-            </picture>
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-  
-  <div class="cp">
-    <p>2023.04.08</p>
-  </div>
-</main>
-
-
-</body>
+    </main>
+  </body>
 </html>

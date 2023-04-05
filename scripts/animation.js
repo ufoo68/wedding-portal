@@ -37,7 +37,6 @@ const tlFadeIn = () => {
   }, 1000);
 };
 
-let tlCount = 0;
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (mvTransitions.ids.includes(entry.target.id)) {
@@ -46,11 +45,12 @@ const observer = new IntersectionObserver((entries) => {
       }
     }
     if (tlTransitions.ids.includes(entry.target.id)) {
-      if (entry.isIntersecting && tlTransitions.ids[0] === entry.target.id) {
-        if (tlCount > 0) {
-          tlFadeIn();
-        }
-        tlCount++;
+      if (
+        entry.isIntersecting &&
+        tlTransitions.ids[0] === entry.target.id &&
+        mvTransitions.count === mvTransitions.ids.length - 1
+      ) {
+        tlFadeIn();
       }
     }
   });
