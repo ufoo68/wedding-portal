@@ -1,16 +1,61 @@
 const fadeInElements = document.querySelectorAll(".scroll-fade-in");
-const windowHeight = window.innerHeight;
 
-function fadeInOnDetectElement() {
-  for (const element of fadeInElements) {
-    const elementRect = element.getBoundingClientRect();
-    const elementCenter = elementRect.top + elementRect.height / 2;
-    const screenCenter = windowHeight / 2;
-    if (elementCenter < screenCenter && element.style.opacity !== 1) {
-      element.style.opacity = 1;
+const mvTransitions = {
+  ids: ["mv_img", "mv_back", "mv_sakura", "mv_title", "prf"],
+  count: 0,
+};
+const tlTransitions = {
+  ids: ["tl_top", "tl_bg", "tl_title", "tl_content", "tl_bottom"],
+  count: 0,
+};
+
+const mvFadeIn = () => {
+  const id = mvTransitions.ids.find(
+    (id) => id === mvTransitions.ids[mvTransitions.count]
+  );
+  const element = document.getElementById(id);
+  element.style.opacity = 1;
+  setTimeout(() => {
+    if (mvTransitions.count < mvTransitions.ids.length - 1) {
+      mvTransitions.count++;
+      mvFadeIn();
     }
-  }
-}
+  }, 1000);
+};
 
-window.addEventListener("load", fadeInOnDetectElement);
-window.addEventListener("scroll", fadeInOnDetectElement);
+const tlFadeIn = () => {
+  const id = tlTransitions.ids.find(
+    (id) => id === tlTransitions.ids[tlTransitions.count]
+  );
+  const element = document.getElementById(id);
+  element.style.opacity = 1;
+  setTimeout(() => {
+    if (tlTransitions.count < tlTransitions.ids.length - 1) {
+      tlTransitions.count++;
+      tlFadeIn();
+    }
+  }, 1000);
+};
+
+let tlCount = 0;
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (mvTransitions.ids.includes(entry.target.id)) {
+      if (entry.isIntersecting && mvTransitions.ids[0] === entry.target.id) {
+        mvFadeIn();
+      }
+    }
+    if (tlTransitions.ids.includes(entry.target.id)) {
+      if (entry.isIntersecting && tlTransitions.ids[0] === entry.target.id) {
+        if (tlCount > 0) {
+          tlFadeIn();
+        }
+        tlCount++;
+      }
+    }
+  });
+});
+
+fadeInElements.forEach((element) => {
+  observer.observe(element);
+});
