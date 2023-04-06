@@ -48,7 +48,7 @@ const observer = new IntersectionObserver((entries) => {
       if (
         entry.isIntersecting &&
         tlTransitions.ids[0] === entry.target.id &&
-        mvTransitions.count === mvTransitions.ids.length - 1
+        mvTransitions.count > 1
       ) {
         tlFadeIn();
       }
