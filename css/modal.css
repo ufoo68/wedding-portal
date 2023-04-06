@@ -1,6 +1,6 @@
 /* モーダルCSS */
 .modal-area {
-  /* visibility: hidden; */
+  visibility: hidden;
   position: fixed;
   z-index: 100; /*サイトによってここの数値は調整 */
   top: 0;
