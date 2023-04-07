@@ -99,6 +99,10 @@ picture {
   margin: auto;
   z-index: 2;
 }
+#mv .mv_title img {
+  height: 28vw;
+  width: auto;
+}
 #prf {
   margin-bottom: 16vw;
 }
