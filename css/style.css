@@ -103,6 +103,25 @@ picture {
   height: 28vw;
   width: auto;
 }
+#movie {
+  margin-bottom: 16vw;
+}
+#movie .movie_title {
+  margin-bottom: 1vw;
+}
+#movie video {
+  width: 90vw;
+  height: auto;
+  max-width: 90%;
+}
+#movie strong {
+  display: block;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+#movie .mb {
+  margin-bottom: 30px;
+}
 #prf {
   margin-bottom: 16vw;
 }
@@ -111,6 +130,43 @@ picture {
 }
 #prf .prf_img {
   margin-bottom: 3vw;
+}
+.modal-wrapper {
+  padding: 20px 5% !important;
+}
+.modal-contents > strong {
+  display: block;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+.modal-contents picture {
+  margin-bottom: 20px;
+}
+.modal-contents .flex {
+  display: flex;
+}
+.modal-contents .flex > div {
+  margin-right: 5%;
+}
+.modal-contents .flex > div:last-child {
+  margin-right: 0;
+}
+.modal-contents .flex > div:last-child strong {
+  font-size: 1.2em;
+  color: #CA5966;
+}
+.modal-contents .flex > div:first-child strong {
+  font-size: 1.2em;
+  color: #8CC41B;
+}
+.modal-contents .flex dl {
+  margin-bottom: 20px;
+}
+.modal-contents .flex dt {
+  font-size: 0.9em;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #f1e9df;
 }
 #tl {
   position: relative;

@@ -98,6 +98,36 @@
         </picture>
       </section>
 
+
+      <section id="movie">
+        <!-- 1,フェード表示-->
+        <picture class="movie_title title_h">
+          <source srcset="/images/movie_title.webp" type="image/webp" />
+          <img class="image" src="/images/movie_title.png" loading="eager" />
+        </picture>
+        <div class="mb">
+          <strong>オープニングムービー</strong>
+          <video controls>
+            <source src="/movie/op_movie.webm" type="video/webm">
+            <source src="/movie/op_movie.mp4" type="video/mp4">
+            お使いの環境では動画再生できません。<br>
+            <a href="/movie/op_movie.mp4">こちら</a>のリンクからご視聴下さい
+          </video>
+          <p class="parts_indet">※開始5秒に空白があります</p>
+        </div>
+        <div>
+          <strong>エンディングムービー</strong>
+          <video controls>
+            <source src="/movie/ed_movie.webm" type="video/webm">
+            <source src="/movie/ed_movie.mp4" type="video/mp4">
+            お使いの環境では動画再生できません。<br>
+            <a href="/movie/ed_movie.mp4">こちら</a>のリンクからご視聴下さい
+          </video>
+          <p class="parts_indet">※開始5秒に空白があります</p>
+        </div>
+      </section>
+
+
       <!-- ブロックごとスクロールでフェード表示-->
       <section id="prf" class="scroll-fade-in">
         <picture class="prf_title title_h">
@@ -127,39 +157,61 @@
         </div>
       </section>
 
+
       <!-- モーダルエリアここから -->
       <section id="prf-modal" class="modal-area">
         <div id="prf-modal-bg" class="modal-bg"></div>
         <div class="modal-wrapper">
           <div class="modal-contents">
-            <h1>新郎新婦紹介</h1>
-            <table>
-              <tr>
-                <th></th>
-                <th>新郎</th>
-                <th>新婦</th>
-              </tr>
-              <tr>
-                <th>名前</th>
-                <td>松永勇太</td>
-                <td>𠮷川椋子</td>
-              </tr>
-              <tr>
-                <th>担当アイドル</th>
-                <td>輿水幸子</td>
-                <td>橘ありす</td>
-              </tr>
-              <tr>
-                <th>好きな原神キャラ</th>
-                <td>夜蘭</td>
-                <td>重雲</td>
-              </tr>
-              <tr>
-                <th>好きな映画</th>
-                <td>サマータイムマシンブルース</td>
-                <td>ミュウと波導の勇者ルカリオ</td>
-              </tr>
-            </table>
+            <strong>新郎新婦紹介</strong>
+            <div class="flex">
+              <div>
+                <picture>
+                  <source srcset="/images/bride_img.webp" type="image/webp" />
+                  <img class="image" src="/images/bride_img.png" loading="eager" />
+                </picture>
+                <strong>Bride</strong>
+                <dl>
+                  <dt>名前</dt>
+                  <dd>松永　勇太</dd>
+                </dl>
+                <dl>
+                  <dt>担当アイドル</dt>
+                  <dd>輿水幸子</dd>
+                </dl>
+                <dl>
+                  <dt>好きな原神キャラ</dt>
+                  <dd>夜蘭</dd>
+                </dl>
+                <dl>
+                  <dt>好きな映画</dt>
+                  <dd>サマータイムマシンブルース</dd>
+                </dl>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="/images/groom_img.webp" type="image/webp" />
+                  <img class="image" src="/images/groom_img.png" loading="eager" />
+                </picture>
+                <strong>Groom</strong>
+                <dl>
+                  <dt>名前</dt>
+                  <dd>𠮷川　椋子</dd>
+                </dl>
+                <dl>
+                  <dt>担当アイドル</dt>
+                  <dd>橘ありす</dd>
+                </dl>
+                <dl>
+                  <dt>好きな原神キャラ</dt>
+                  <dd>重雲</dd>
+                </dl>
+                <dl>
+                  <dt>好きな映画</dt>
+                  <dd>ミュウと波導の勇者ルカリオ</dd>
+                </dl>
+              </div>
+            </div>
           </div>
           <div id="close-modal" class="close-modal">×</div>
         </div>

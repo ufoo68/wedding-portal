@@ -111,6 +111,26 @@ picture {
 	}
 }
 
+#movie {
+	margin-bottom:@block_margin;
+	.movie_title {
+		margin-bottom:1vw;
+	}
+	video {
+		width:90vw;
+		height:auto;
+		max-width:90%;
+	}
+	strong {
+		display:block;
+		font-size:1.6em;
+		margin-bottom:10px;
+	}
+	.mb {
+		margin-bottom:30px;
+	}
+}
+
 #prf {
 	margin-bottom:@block_margin;
 	.prf_title {
@@ -118,6 +138,49 @@ picture {
 	}
 	.prf_img {
 		margin-bottom:3vw;
+	}
+}
+.modal-wrapper {
+	padding:20px 5% !important;
+}
+.modal-contents {
+	> strong {
+		display:block;
+		font-size:1.6em;
+		margin-bottom:20px;
+	}
+	picture {
+		margin-bottom:20px;
+	}
+	.flex {
+		display:flex;
+		> div {
+			margin-right:5%;
+			&:last-child {
+				margin-right:0;
+				strong {
+					font-size:1.2em;
+					color:#CA5966;
+				}
+			}
+			&:first-child {
+				strong {
+					font-size:1.2em;
+					color:#8CC41B;
+				}
+			}
+		}
+		dl {
+			margin-bottom:20px;
+		}
+		dt {
+			font-size:0.9em;
+			padding:5px;
+			margin-bottom:5px;
+			border-bottom:1px solid #f1e9df;
+		}
+		dd {
+		}
 	}
 }
 
